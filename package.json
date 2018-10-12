@@ -1,0 +1,37 @@
+{
+  "name": "node-abstracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": {
+    "email": "matt.that@gmail.com",
+    "name": "Matt That",
+    "url": "http://matt-that.com"
+  },
+  "contributors": [
+    {
+      "email": "matt.that@gmail.com",
+      "name": "Matt That",
+      "url": "http://matt-that.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattthat/node-abstracts.git"
+  },
+  "license": {
+    "type": "Apache-2.0",
+    "url": "https://spdx.org/licenses/Apache-2.0"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel-register --reporter spec ./test/**/*.test.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-istanbul": "^5.0.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
