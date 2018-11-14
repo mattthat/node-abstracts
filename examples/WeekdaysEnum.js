@@ -1,7 +1,11 @@
-import AbstractBaseEnum from "../src/AbstractBaseEnum";
+import Translator from 'some-translation-solution';
 
-export default class WeekdaysEnum extends AbstractBaseEnum {}
-
+export class WeekdaysEnum extends AbstractBaseEnum {
+    translate(language) {
+        return new Translator(language,
+            this.toString()).toString();
+    }
+}
 WeekdaysEnum.MONDAY = new WeekdaysEnum('MONDAY');
 WeekdaysEnum.TUESDAY = new WeekdaysEnum('TUESDAY');
 WeekdaysEnum.WEDNESDAY = new WeekdaysEnum('WEDNESDAY');
